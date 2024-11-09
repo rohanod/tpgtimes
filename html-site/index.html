@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TPG Bus and Tram Timings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="main-title">TPG Bus and Tram Timings</h1>
+            <div class="language-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="language-switch">
+                    <span class="slider round"></span>
+                </label>
+                <span id="language-label">EN</span>
+            </div>
+        </div>
+        <h2 id="stop-name-header"></h2>
+        <button id="readme-button" class="readme-button">Read Me</button>
+        <form id="bus-form">
+            <input type="text" id="stop-name" placeholder="Enter stop name">
+            <input type="text" id="vehicle-numbers" placeholder="Enter bus/tram numbers (optional)">
+        </form>
+        <div id="bus-info"></div>
+    </div>
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <div id="readme-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-readme">&times;</span>
+            <div id="readme-body"></div>
+        </div>
+    </div>
+</body>
+</html>
